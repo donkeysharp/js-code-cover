@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Testing some stuff</title>
+  <script type="text/javascript">
+    function greetings() {
+      var person = new Donkeysharp.Person('Sergio');
+      document.getElementById('hi').innerHTML = person.sayHello();
+      document.getElementById('bye').innerHTML = person.sayGoodBye();
+    }
+  </script>
+</head>
+<body onload="greetings()">
+  <h1 id="hi"></h1>
+  <h1 id="bye"></h1>
+  <script src="javascript/main.js" type="text/javascript"></script>
+</body>
+</html>
